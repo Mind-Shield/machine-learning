@@ -1,2 +1,5 @@
-# machine-learning
-model generator
+# Modelo de PNL 
+
+# Estrutra de pastas:
+
+base de dados ->
