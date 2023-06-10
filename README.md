@@ -1,7 +1,7 @@
 # Modelo de PNL 
 
 # Tecnologias utilizadas:
-- phyton notebook
+- python notebook
 - nltk
 - keras
 - scikit-learn
@@ -32,60 +32,23 @@ Com essa detecção precoce, os profissionais de saúde e educadores podem ser a
 A utilização da IA e do PLN nesse contexto proporciona uma ferramenta valiosa para auxiliar na identificação de problemas emocionais nas crianças, contribuindo para uma abordagem mais preventiva, e  mais eficaz na prevenção de atos violentos e no cuidado da saúde mental das crianças.
 
 # Rodar a aplicação
-Para rodar o notebook de treinamento deve-se importar os pacotes, instalando no console caso requisitado.
+Para rodar o notebook de treinamento,caso requisitado pelo sistema devido às tecnologias utilizadas, as seguintes dependências devem ser instaladas:
 
-```phyton
-!pip install unidecode
-import locale
-locale.getpreferredencoding = lambda: 'UTF-8'
-!pip install sentence-transformers
-#importação de bibliotecas
-#pandas para visualização dos dados
-import pandas as pd
-#unidecode para o tratamento dos dados
-from unidecode import unidecode
-#importação das bibliotecas para remoção de Stop Words
-import spacy
-nlp = spacy.cli.download('pt_core_news_sm')
-nlp = spacy.load('pt_core_news_sm')
-#nltk para pre proscesamento e tokenização
-import nltk
-nltk.download('punkt')
-#biblioteca para tokenização 
-from keras.preprocessing.text import Tokenizer
-#bibliotecas para o modelo de naive bayes
-from sklearn.model_selection import train_test_split
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.naive_bayes import GaussianNB
-#bibliotecas para a avaliação dos modelos
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-#biblioteca para exportação dos modelos
-import pickle
-#importação de bibliotecas para matematica
-import matplotlib.pyplot as plt
-import numpy as np
+- unidecode
+- sentence-transformers
+- spacy
+- nltk
+- keras
+- scikit-learn
+- matplotlib
+- numpy
+- imbalanced-learn
+- tensorflow
+- joblib
+- transformers
 
-from sklearn.feature_extraction.text import CountVectorizer
 
-#bibliotecas para rede neural
-import keras
-from imblearn.over_sampling import SMOTE
-from tensorflow.keras.utils import to_categorical
-from sentence_transformers import SentenceTransformer
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.callbacks import EarlyStopping
-import tensorflow as tf
-#bibliotecas para exportação de rede neural
-from joblib import dump
-from joblib import load
-#bibliotecas para vetorização
-from sentence_transformers import SentenceTransformer
-from transformers import BertForSequenceClassification
-```
-
-Também é necessário substituir o caminho de importação do dataset para o caminho de sua máquina.
+Também é necessário substituir o caminho de importação do dataset para o caminho no qual ele está em sua máquina.
 
 ```phyton
 df = pd.read_csv("/content/drive/MyDrive/Hackas/imdb-reviews-pt-br.csv")
@@ -119,10 +82,10 @@ Baseado em Transformers também captura informações contextuais de palavras em
 Os tipos de vetorização foram utilizados nos seguintes modelos:
 
 ## Naive Bayes
-Naive Bayes é um algoritmo de classificação com base em probailidades, baseado no teorema de Bayes.
+Naive Bayes é um algoritmo de classificação com base em probabilidades, baseado no teorema de Bayes.
 
 ## Rede Neural
-Modelo de aprendizado de máquina composto por diversas camadas de neurônios artificiais , capaz de aprender com dados e realizar classsificações com base nesses dados.
+Modelo de aprendizado de máquina composto por diversas camadas de neurônios artificiais , capaz de aprender com dados e realizar classificações com base nesses dados.
 
 # Resultado dos modelos:
 
