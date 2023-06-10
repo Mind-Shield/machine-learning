@@ -158,7 +158,7 @@ Matriz:
 ![image](https://github.com/Mind-Shield/machine-learning/assets/99202408/ad00e9ee-5be8-4e44-b955-13773c9df7de)
 
 
-## Rede Neural com Bert	com 
+## Rede Neural com Bert	
 
 Acurácia: 0.813862
 
