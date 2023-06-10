@@ -130,3 +130,8 @@ Revocação: 0.7952
 Matriz: 
 
 ![image](https://github.com/Mind-Shield/machine-learning/assets/99202408/e200e5c8-376d-4b59-a9a7-d9fcb5e7733b)
+
+## License
+
+Distributed under the MIT License. See [License](https://github.com/Mind-Shield/machine-learning/blob/main/LICENSE) for more information.
+
